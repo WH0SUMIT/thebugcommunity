@@ -599,7 +599,7 @@
           <div class="info-box rounded-3 mb-4 shadow-sm">
             <i class="bx bx-map"></i>
             <h3>Our Address</h3>
-            <p>Indore, India , PIN : </p>
+            <p>Indore, India , PIN : 453441</p>
           </div>
         </div>
 
@@ -607,7 +607,7 @@
           <div class="info-box  mb-4 rounded-3 shadow-sm">
             <i class="bx bx-envelope"></i>
             <h3>Email Us</h3>
-            <p>contact@example.com</p>
+            <p>thebugcommunity@gmail.com</p>
           </div>
         </div>
 
@@ -633,7 +633,7 @@
         </div>
 
         <div class="col-lg-6 ">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form rounded-3 shadow-sm">
+          <form name="contact" method="POST" data-netlify="true" class="php-email-form rounded-3 shadow-sm">
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -648,12 +648,7 @@
             <div class="form-group mt-3">
               <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
             </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-start my-2"><button type="submit">Send Message</button></div>
           </form>
         </div>
 
@@ -704,7 +699,7 @@
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Now !</h4>
             <p>Send Your Email Address</p>
-            <form action="" method="post">
+            <form action="" name="contact" method="POST" data-netlify="true">
               <input type="email" name="email" placeholder="Email Address"><input type="submit" value="Subscribe">
             </form>
           </div>
