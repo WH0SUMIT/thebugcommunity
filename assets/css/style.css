@@ -1126,11 +1126,6 @@ section {
   background: linear-gradient(42deg, #000; 0%, #7b27d8 100%);
 }
 
-.faq .section-title h2,
-.faq .section-title p {
-  color: #fff;
-}
-
 .faq .section-title h2::after {
   background: rgba(255, 255, 255, 0.6);
 }
@@ -1150,7 +1145,7 @@ section {
 
 .faq .faq-list li {
   padding: 30px;
-  background: #fff;
+  background: #000;
   border-radius: 5px;
   position: relative;
 }
@@ -1162,6 +1157,7 @@ section {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
+  color: #fff;
   padding: 0 30px;
   outline: none;
   cursor: pointer;
@@ -1172,7 +1168,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #8577fb;
+  color: #fff;
 }
 
 .faq .faq-list .icon-show,
@@ -1190,14 +1186,6 @@ section {
 
 .faq .faq-list .icon-show {
   display: none;
-}
-
-.faq .faq-list a.collapsed {
-  color: #2c4964;
-}
-
-.faq .faq-list a.collapsed:hover {
-  color: #000;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1560,3 +1548,62 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+/* --------------- Maps */
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 360px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 360px;
+}
+
+.gmap_iframe {
+  height: 360px !important;
+  border-radius: 1rem;
+}
+
+/**
+Swiper
+ */
+
+:root {
+  --swiper-theme-color: #007aff;
+}
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+.swiper-container-vertical > .swiper-wrapper {
+  flex-direction: column;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+/**
+Swiper End
+ */
