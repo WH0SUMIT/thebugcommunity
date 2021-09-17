@@ -1483,5 +1483,25 @@ Swiper
 }
 
 /**
-Swiper End
- */
+Button Black
+
+*/
+
+.btn-black {
+  background: #000;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.btn-black:hover {
+  background: #7b27d8;
+  color: #fff;
+}
+
+
+.my-10{
+  margin: 5rem 0;
+}
