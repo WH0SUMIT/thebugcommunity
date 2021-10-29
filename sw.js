@@ -1,5 +1,5 @@
 const staticCacheName = "site-static";
-const dynamicCache = "site-dynamic-v1";
+const dynamicCacheName = "site-dynamic-v1";
 const assets = [
   "/",
   "/index.html",
@@ -21,7 +21,6 @@ self.addEventListener("install", (evt) => {
   //   console.log('helo');
   evt.waitUntil(
     caches.open(staticCacheName).then((cache) => {
-      console.log("done cache");
       cache.addAll(assets);
     })
   );
@@ -30,6 +29,15 @@ self.addEventListener("install", (evt) => {
 //Activate servie worker
 self.addEventListener("activate", (evt) => {
   //   console.log('ddd');
+  evt.waitUntil(
+    caches.keys().then((keys) => {
+      return Promise.all(
+        keys
+          .filter((key) => key !== staticCacheName && dynamicCacheNameName)
+          .map((key) => caches.delete(key))
+      );
+    })
+  );
 });
 
 //Fetch Event
@@ -38,17 +46,19 @@ self.addEventListener("fetch", (evt) => {
     caches
       .match(evt.request)
       .then((cacheRes) => {
-        console.log("nono");
         return (
           cacheRes ||
           fetch(evt.request).then((fetchRes) => {
-            return caches.open(dynamicCache).then((cache) => {
+            return caches.open(dynamicCacheName).then((cache) => {
               cache.put(evt.request.url, fetchRes.clone());
               return fetchRes;
             });
           })
         );
       })
-      .catch(() => caches.match("/Pages/notfound.html"))
+      .catch(() => {
+        if (evt.request.url.indexOf(".html") > -1)
+          return caches.match("/Pages/notfound.html");
+      })
   );
 });
