@@ -1583,8 +1583,8 @@ section {
 }
 
 .rotated {
-  -webkit-transform: rotate(-6deg);
-          transform: rotate(-6deg);
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
   /* Equal to rotateZ(45deg) */
 }
 /*# sourceMappingURL=style.css.map */
