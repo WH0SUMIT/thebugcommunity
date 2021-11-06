@@ -507,12 +507,12 @@ h6 {
   border: 2px solid #fff;
 }
 
-#hero .btn-get-started:hover {
+.btn-get-started:hover {
   background: #fff;
   color: #000;
 }
 
-#hero .animated {
+.animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
@@ -1580,5 +1580,11 @@ section {
 
 .my-10 {
   margin: 5rem 0;
+}
+
+.rotated {
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+  /* Equal to rotateZ(45deg) */
 }
 /*# sourceMappingURL=style.css.map */
