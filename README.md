@@ -1,1 +1,1 @@
-# thebugcommunity
+# The Bug Community
