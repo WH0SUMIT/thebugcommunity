@@ -1587,4 +1587,13 @@ section {
           transform: rotate(6deg);
   /* Equal to rotateZ(45deg) */
 }
+
+/* Underline for links using background-image */
+.bg-underline {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, transparent), color-stop(0%, #ddbfff));
+  background-image: linear-gradient(transparent 65%, #ddbfff 0%);
+  background-repeat: no-repeat;
+  background-size: 100% 250%;
+  background-position: 0% 55%;
+}
 /*# sourceMappingURL=style.css.map */
