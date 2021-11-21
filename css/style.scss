@@ -1499,3 +1499,13 @@ section {
 .rotated {
   transform: rotate(6deg); /* Equal to rotateZ(45deg) */
 }
+
+// *********  Underline *********
+
+/* Underline for links using background-image */
+.bg-underline {
+  background-image: linear-gradient(transparent 65%, #ddbfff 0%);
+  background-repeat: no-repeat;
+  background-size: 100% 250%;
+  background-position: 0% 55%;
+}
