@@ -1,9 +1,3 @@
-/**
- * Template Name: Techie - v4.3.0
- * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
 (function () {
   "use strict";
 
@@ -280,3 +274,39 @@
     });
   });
 })();
+
+const btn = document.getElementById("contactform");
+
+document
+  .getElementById("contactform")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+    let subject = document.getElementById("subject").value;
+
+    btn.value = "Sending...";
+    let contactparams = {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+    };
+
+    console.log(contactparams);
+
+    const serviceID = "default_service";
+    const templateID = "template_3g2v1ot";
+
+    emailjs.send(serviceID, templateID, contactparams).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Your message has been sent!");
+      },
+      function (error) {
+        console.log("FAILED...", error);
+        alert("Your message has not been sent!");
+      }
+    );
+  });
