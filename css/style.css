@@ -9,9 +9,17 @@ a {
   text-decoration: none;
 }
 
+i {
+  color: #8577fb !important;
+}
+
 a:hover {
   color: #8577fb;
   text-decoration: none;
+}
+
+.rounded-5 {
+  border-radius: 10px !important;
 }
 
 h1,
@@ -1452,10 +1460,6 @@ section {
   border-radius: 0 5px 5px 0;
   -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#footer .footer-newsletter form input[type="submit"]:hover {
-  background: #000;
 }
 
 #footer .copyright-wrap {
