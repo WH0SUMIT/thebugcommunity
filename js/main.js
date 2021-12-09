@@ -286,7 +286,7 @@ document
     let message = document.getElementById("message").value;
     let subject = document.getElementById("subject").value;
 
-    btn.value = "Sending...";
+
     let contactparams = {
       name: name,
       email: email,
