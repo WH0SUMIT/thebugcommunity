@@ -168,12 +168,12 @@
   /**
    * Preloader
    */
-  let preloader = select("#preloader");
-  if (preloader) {
-    window.addEventListener("load", () => {
-      preloader.remove();
-    });
-  }
+  // let preloader = select("#preloader");
+  // if (preloader) {
+  //   window.addEventListener("load", () => {
+  //     preloader.remove();
+  //   });
+  // }
 
   /**
    * Testimonials slider
@@ -285,7 +285,6 @@ document
     let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
     let subject = document.getElementById("subject").value;
-
 
     let contactparams = {
       name: name,
