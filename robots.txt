@@ -1,0 +1,7 @@
+
+User-agent: *
+Disallow: 
+Disallow: /blog.html/
+Disallow: /jobs.html/
+Disallow: /notfound.html/
+Sitemap: https://thebugcommunity.in/sitemap.xml
