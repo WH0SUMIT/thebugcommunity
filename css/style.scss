@@ -1442,25 +1442,26 @@ section {
   color: #fff;
 }
 
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  text-decoration: none;
+.social-links {
+  a {
+    font-size: 18px;
+    display: inline-block;
+    background: rgb(238, 238, 238);
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      text-decoration: none;
+    }
+  }
 }
 
 /* --------------- Maps */
@@ -1576,4 +1577,53 @@ section {
   border-radius: 50%;
   transition: all 0.3s;
   font-size: 0.9rem;
+}
+
+div.marquee > a > img {
+  height: 120px;
+}
+
+.logoMarqueeSection > div > div {
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 0;
+}
+
+.marquee-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  transform: translate3d(0%, 0, 0);
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.marquee a {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 5.4rem;
+}
+
+.marquee-wrapper:hover .marquee {
+  animation-play-state: paused !important;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.text-custom-1 {
+  color: #dcdcdd;
 }
