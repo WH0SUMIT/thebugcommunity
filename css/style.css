@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 body {
   background: linear-gradient(90deg, white 21px, transparent 1%) center, linear-gradient(white 21px, transparent 1%) center, black;
   background-size: 22px 22px;
@@ -1728,5 +1729,44 @@ div.marquee > a > img {
 
 .text-custom-1 {
   color: #dcdcdd;
+}
+
+p,
+.text-muted {
+  font-family: "Quicksand", sans-serif;
+}
+
+.icon-bg-dark {
+  background-color: #000 !important;
+}
+
+.icon-bg-dark i {
+  color: #fff !important;
+}
+
+.icon-bg-dark:hover {
+  background-color: #fff !important;
+  border: 1px solid #000 !important;
+}
+
+.icon-bg-dark:hover i {
+  color: #000 !important;
+}
+
+::-moz-selection {
+  background-color: #000;
+  color: #fff;
+}
+
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+.selection-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 /*# sourceMappingURL=style.css.map */
