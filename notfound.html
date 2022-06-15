@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>The Bug Community | Blogs </title>
+  <title>The Bug Community | Digital Marketing Agency</title>
   <meta name="description"
     content="The Bug Community provides services in social media marketing, search engine optimization, CAD design, as well as web development and web design.">
   <meta name="keywords"
@@ -13,10 +13,12 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="The Bug Community">
   <meta name="distribution" content="global">
+  <meta name="google-site-verification" content="a30j7ykjGZIDXT0u-pANNGCe3_f0SbBRSVjrbRneLpg" />
+
   <link rel="manifest" href="/manifest.json">
   <!-- Favicons -->
-  <link href="assets/img/icon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon/favicon-32x32.png" rel="icon">
+  <link href="assets/img/favicon/apple-touch-icon.png" rel="apple-touch-icon">
 
 
   <!-- Vendor CSS Files -->
@@ -37,48 +39,87 @@
   <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
 
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_UJbBraTsMjx5pTzHYRpyd");
+    })();
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "The Bug Community",
+      "alternateName": "TBC",
+      "url": "https://www.thebugcommunity.in/",
+      "logo": "https://www.thebugcommunity.in/https://ik.imagekit.io/thebugcommunity/logo-white.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655060091236",
+      "sameAs": [
+        "https://twitter.com/thebugcommunity",
+        "https://www.instagram.com/thebugcommunity.in/",
+        "https://www.linkedin.com/company/thebugcommunity/",
+        "https://www.facebook.com/thebugcommunity",
+        "https://www.thebugcommunity.in/"
+      ]
+    }
+  </script>
   <!-- Template Main CSS File -->
   <link href="./css/style.css" rel="stylesheet">
+
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
 
 </head>
 
 <body>
 
-
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-inner-pages">
+  <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
-      <a class="logo text-decoration-none" href="/index.html"> <img
-          src="https://ik.imagekit.io/thebugcommunity/tbcsocial-media.png?updatedAt=1641195718880"
-          class="img-fluid animated" alt=""></a>
+      <a class="logo text-decoration-none" href="index.html"> <img
+          src="https://ik.imagekit.io/thebugcommunity/logo-white.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655060091236"
+          class="img-fluid  selection-none" alt="logo"></a>
+
+
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="/index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="/index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="/index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="about.html">About</a></li>
+          <li><a class="nav-link scrollto" href="./Services.html">Services</a></li>
           <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
-          <li><a class="nav-link scrollto" href="/index.html#faq">FAQ</a></li>
-          <li><a class="nav-link scrollto active" href="/blogs.html">Blogs</a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
 
-          <li><a class="nav-link scrollto" href="/index.html#contact">Contact</a></li>
-          <li><a class="getstarted scrollto " href="/index.html#about">Get
-              Started</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
         </ul>
         <i class="bx bx-menu-alt-right mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
+
     </div>
   </header><!-- End Header -->
 
-  <main id="main">
-    <section class=" my-5 ">
-      <div class="container">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Oops !</h2>
-          <div><a href="/" class="btn-get-started scrollto">Back to Home</a></div>
+    <div class="container-fluid py-3 ">
+      <div class="row justify-content-center flex-wrap-reverse">
+        <div class="col-xl-5 col-lg-6 align-self-center justify-content-between">
+          <h1 class="fs-1">Sorry page not found ... !</h1>
+          <h4 class="text-muted">
+
+            We doen't know what you are looking for.
+          </h4>
+          <a href="./index.html" class="btn btn-custom-1 p-2 px-3 my-3 scrollto rounded-3">Back to Home</a>
+        </div>
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img justify-content-end" data-aos="zoom-in"
+          data-aos-delay="150">
+          <img
+            src="https://ik.imagekit.io/thebugcommunity/page-not-found.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655061549753"
+            class="img-fluid animated selection-none" alt="hero image">
         </div>
       </div>
-    </section>
+    </div>
+  </section><!-- End Hero -->
+  <div class="horizontal-line"></div>
+
 
   </main><!-- End #main -->
 
@@ -95,7 +136,8 @@
               Dr. Ambedkar Nagar, <br>
               Madhya Pradesh, 453441<br>
               India <br><br>
-              <strong>Phone:</strong>Not available right now.<br>
+              <strong>Phone: &nbsp;</strong><a href="tel:8103241455" class="text-light">8103241455</a>,<a
+                href="tel:7987975809" class="text-light">7987975809</a> <br>
               <strong>Email : </strong>
 
               <a href="mailto:thebugcommunity&#64;gmail&#46;com" class="text-light">
@@ -104,13 +146,13 @@
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Company</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/index.html#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/index.html#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/index.html#services">Services</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/blogs.html">Blogs</a>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./blogs.html">Blogs</a>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Jobs.html">Career</a>
               </li>
             </ul>
           </div>
@@ -118,22 +160,19 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/index.html#services">Web Design</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/index.html#services">Web
-                  Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/index.html#services">Product
-                  Management</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/index.html#services">Marketing</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/index.html#services">Graphic
-                  Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">Graphic Design</a></li>
             </ul>
           </div>
+
           <div class="col-lg-4 col-md-6 footer-newsletter">
+
             <h4>Join Now !</h4>
             <p>Send Your Email Address</p>
+
             <form action="" name="getting-emails" method="POST" data-netlify="true">
               <input type="email" name="email" placeholder="Email Address"><input type="submit" value="Subscribe">
             </form>
@@ -170,6 +209,7 @@
   <!-- <div id="preloader"></div> -->
 
   <!-- <script src="assets/vendor/purecounter/purecounter.js"></script> -->
+
   <!-- Vendor JS Files -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
     integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
@@ -189,9 +229,11 @@
     integrity="sha512-0LCRuLsEaz+pw7UZgAZ8j363hJJnjTFB0LjODKk3dGEcNbzhKxcrAbRRYwbRhiURMXatLwXqzb1ndrm6ONnEiw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
   <!-- Template Main JS File -->
   <script src="./js/main.js"></script>
   <script src="./js/pwa.js"></script>
+
 </body>
 
 </html>
